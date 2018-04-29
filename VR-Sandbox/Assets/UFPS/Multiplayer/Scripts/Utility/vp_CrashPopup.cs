@@ -182,13 +182,13 @@ public class vp_CrashPopup : MonoBehaviour
 		get
 		{
 			if ((Application.isEditor && !ShowInEditor)
-				|| (Application.isWebPlayer && !ShowInWebplayer)
+				//|| (Application.isWebPlayer && !ShowInWebplayer)
 				|| (Application.isMobilePlatform && !ShowOnMobile)
 				|| (Application.isConsolePlatform && !ShowOnConsole))
 				return false;
 
 			if ((!Application.isEditor)
-				&& (!Application.isWebPlayer)
+				//&& (!Application.isWebPlayer)
 				&& (!Application.isMobilePlatform)
 				&& (!Application.isConsolePlatform)
 				&& !ShowInStandalone)
